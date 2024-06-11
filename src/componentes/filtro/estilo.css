@@ -1,0 +1,21 @@
+.filtros{
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.filtros > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros > div >span{
+    font-size: 0.43em;
+}
+
+.filtros > div > img{
+    height: 41px;
+    width: 41px;
+}
