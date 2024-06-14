@@ -6,8 +6,8 @@ import Quadro from './componentes/quadro';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Cabecalho></Cabecalho>
+      <Cabecalho></Cabecalho>
+      <header className="App-container">
         <Filtro></Filtro>
         <Quadro></Quadro>
       </header>

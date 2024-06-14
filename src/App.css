@@ -1,11 +1,14 @@
 .App {
   text-align: center;
+  background-color: #ffffff;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
 }
 
-.App-header {
-  background-color: #ffffff;
-  min-height: 100vh;
+.App-container {
   display: flex;
   flex-direction: column;
-  font-size: calc(10px + 2vmin);
+  margin: 110px 65px 30px 65px;
+  justify-content: center;
+  gap: 60px;
 }

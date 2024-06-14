@@ -1,6 +1,6 @@
 .div-container{
-    height: 300px;
-    width: 400px;
+    height: 250px;
+    width: 100%;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 12px;
     display: flex;
@@ -18,5 +18,4 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 56px;
     justify-content: center;
-    padding: 75px;
 }
