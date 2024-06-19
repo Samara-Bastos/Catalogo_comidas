@@ -13,12 +13,12 @@ function Filtro(){
     return(
         <div className='filtros'>
             <div> 
-                <img src={Bolo} alt='Bolo'></img>
-                <span>Bolo</span>
-            </div>
-            <div> 
                 <img src={Burguer} alt='Burguer'></img>
                 <span>Burguer</span>
+            </div>
+            <div> 
+                <img src={Bolo} alt='Bolo'></img>
+                <span>Bolo</span>
             </div>
             <div> 
                 <img src={Hotdog} alt='Hot dog'></img>

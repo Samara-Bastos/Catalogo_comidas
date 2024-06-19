@@ -7,10 +7,11 @@ function App() {
   return (
     <div className="App">
       <Cabecalho></Cabecalho>
-      <header className="App-container">
+      
+      <div className="App-container">
         <Filtro></Filtro>
         <Quadro></Quadro>
-      </header>
+      </div>
     </div>
   );
 }

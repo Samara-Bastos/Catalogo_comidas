@@ -1,14 +1,22 @@
-.App {
-  text-align: center;
-  background-color: #ffffff;
-  font-size: calc(10px + 2vmin);
-  min-height: 100vh;
+html{
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .App-container {
   display: flex;
   flex-direction: column;
-  margin: 110px 65px 30px 65px;
+  margin: 140px 65px 50px 65px;
   justify-content: center;
   gap: 60px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .App-container {
+    display: flex;
+    flex-direction: column;
+    margin: 110px 25px 30px 25px;
+    justify-content: center;
+    gap: 27px;
+  }
+
 }
