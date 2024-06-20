@@ -1,7 +1,7 @@
 .cabecalho{
     height: 90px;
     width: 100%;
-    background-color: #FFFFFF !important;
+    background-color: #F3D4A0 !important;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 3px;
     position: fixed;
     top: 0;
@@ -17,13 +17,14 @@
     margin-left: 13px;
 }
 
-.div-logo > img{
+.cabecalho > img{
+    margin-left: 15px;
     height: 41px;
     width: 41px;
 }
 
-.div-logo >span{
-    font-size: 1.4em; 
+.cabecalho >span{
+    font-size: 1.6em; 
 }
 
 .div-input{
@@ -36,6 +37,7 @@
 }
 
 .input{
+    background-color: transparent;
     border: none;
     margin-left: 5px;
     margin-right: 3px;
@@ -45,4 +47,5 @@
     height: 22px;
     width: 22px;
     margin-left: 8px;
+    margin-right: 4px;
 }

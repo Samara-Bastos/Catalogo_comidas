@@ -5,10 +5,8 @@ import Lupa from '../../icones/lupa.svg';
 function Cabecalho(){
     return(
         <div className='cabecalho'>
-            <div className='div-logo'>  
-                <img src={Logo} alt='logo'></img>
-                <span>Catálogo de comidas</span>
-            </div>
+            <img src={Logo} alt='logo'></img>
+            <span>Catálogo de comidas</span>
             <div className='div-input'>
                 <input type='text' className='input' />
                 <img className='lupa' src={Lupa} alt='pesquisar'></img>

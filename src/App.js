@@ -7,7 +7,6 @@ function App() {
   return (
     <div className="App">
       <Cabecalho></Cabecalho>
-      
       <div className="App-container">
         <Filtro></Filtro>
         <Quadro></Quadro>

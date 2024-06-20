@@ -1,5 +1,4 @@
 import './estilo.css';
-import Imagem from '../imagens-quadro';
 
 import img01 from '../../imagens/01.jpg';
 import img02 from '../../imagens/02.jpg';
@@ -13,6 +12,8 @@ import img09 from '../../imagens/09.jpg';
 import img10 from '../../imagens/10.jpg';
 import img11 from '../../imagens/11.jpg';
 import img12 from '../../imagens/12.jpg';
+import Pin from '../../icones/pin.svg';
+import Descricao from '../../icones/descricao.svg';
 
 
 const imgs = [img01,img02,img03,img04,img05,img06,img07,img08,img09,img10,img11,img12];
@@ -23,7 +24,19 @@ function Quadro(){
         <div className='container'>
             {
                 imgs.map( (imgSelecionada) => (
-                    <Imagem src={imgSelecionada} />
+                    <div className='div-imagem'>
+                        <img src={imgSelecionada} alt='imagem'/>
+                        <div className='descricao'>
+                            <span>
+                                <img src={Pin} alt='imagem'/>
+                                Nome teste
+                            </span>
+                            <span>
+                                <img src={Descricao} alt='imagem'/>
+                                Uma breve descrição sobre a comida em destaque
+                            </span>
+                        </div>
+                    </div>
                 )) 
             }
         </div>
