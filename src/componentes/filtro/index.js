@@ -9,45 +9,29 @@ import Pao from '../../icones/pao.svg';
 import Cafe from '../../icones/cafe.svg';
 import Frango from '../../icones/frango.svg';
 
+const Imgs = [
+    {src: Burguer, nome: 'Burguer'},
+    {src: Bolo, nome: 'Bolo'},
+    {src: Hotdog, nome: 'Hot dog'},
+    {src: Bebidas, nome: 'Bebidas'},
+    {src: Massas, nome: 'Massas'},
+    {src: Pizza, nome: 'Pizzas'},
+    {src: Pao, nome: 'Pães'},
+    {src: Cafe, nome: 'Café'},
+    {src: Frango, nome: 'Frangos'},
+];
+
 function Filtro(){
     return(
         <div className='filtros'>
-            <div> 
-                <img src={Burguer} alt='Burguer'></img>
-                <span>Burguer</span>
-            </div>
-            <div> 
-                <img src={Bolo} alt='Bolo'></img>
-                <span>Bolo</span>
-            </div>
-            <div> 
-                <img src={Hotdog} alt='Hot dog'></img>
-                <span>Hot Dog</span>
-            </div>
-            <div> 
-                <img src={Bebidas} alt='Bebidas'></img>
-                <span>Bebidas</span>
-            </div>
-            <div> 
-                <img src={Massas} alt='Massas'></img>
-                <span>Massas</span>
-            </div>
-            <div> 
-                <img src={Pizza} alt='Pizza'></img>
-                <span>Pizzas</span>
-            </div>
-            <div> 
-                <img src={Pao} alt='Pão'></img>
-                <span>Pães</span>
-            </div>
-            <div> 
-                <img src={Cafe} alt='Café'></img>
-                <span>Cafés</span>
-            </div>
-            <div> 
-                <img src={Frango} alt='Frango'></img>
-                <span>Frangos</span>
-            </div>
+            {
+                Imgs.map( imagem => (
+                    <div> 
+                        <img src={imagem.src} alt={imagem.nome}></img>
+                        <span>{imagem.nome}</span>
+                    </div>
+                ))
+            }
         </div>
     )
 }
