@@ -10,8 +10,8 @@ function Quadro({categoria}){
     return(
         <div className='container'>
             {
-                Imgs[categoria].img.map((imgSelecionada) => (
-                    <div className='div-imagem'>
+                Imgs[categoria].img.map((imgSelecionada, index) => (
+                    <div className='div-imagem' key={index}>
                         <img src={imgSelecionada} alt='imagem'/>
                         <div className='descricao'>
                             <span>
