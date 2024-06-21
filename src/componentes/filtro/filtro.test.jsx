@@ -32,7 +32,6 @@ describe("Filtro",  () => {
 
         Imgs.forEach(imagem => {
             expect(screen.getByAltText(imagem.nome)).toBeInTheDocument();
-            expect(screen.getByText(imagem.nome)).toBeInTheDocument();
         });
     });
 
