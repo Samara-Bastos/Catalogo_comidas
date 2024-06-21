@@ -10,13 +10,6 @@
     justify-content: space-between;
 }
 
-.div-logo{
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    margin-left: 13px;
-}
-
 .cabecalho > img{
     margin-left: 15px;
     height: 41px;
@@ -29,18 +22,24 @@
 
 .div-input{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-right: 13px;
     border: 1px solid #000;
-    border-radius: 20px;
+    border-radius: 16px;
+    background-color: #000;
+    color: #ffffff;
+    font-size: 0.9em; 
+    padding: 4px;
 }
 
-.input{
-    background-color: transparent;
-    border: none;
-    margin-left: 5px;
-    margin-right: 3px;
+.div-input:hover{
+    cursor: pointer;
+    
+}
+
+a{
+    text-decoration: none;
 }
 
 .lupa{
@@ -48,4 +47,10 @@
     width: 22px;
     margin-left: 8px;
     margin-right: 4px;
+}
+
+@media only screen and (max-width: 616px) {
+    .cabecalho >span{
+        font-size: 1.1em; 
+    }
 }

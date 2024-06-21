@@ -1,15 +1,18 @@
 .filtros{
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 50px;
     justify-content: space-between;
     align-items: center;
 }
 
-.filtros > div{
+.filtros > button{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: none;
     border-bottom: 3px solid transparent; 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 12px;
@@ -22,30 +25,35 @@
     border-bottom: 3px solid #000 !important;
 }
 
-.filtros > div:hover{
+.filtros > button:hover{
     cursor: pointer;
     border-bottom: 3px solid #000;
 }
 
-.filtros > div >span{
+.filtros > button >span{
     font-size: 0.9em;
 }
 
 
-.filtros > div > img{
+.filtros > button > img{
     height: 41px;
     width: 41px;
 }
 
-@media only screen and (max-width: 1160px) {
-    .filtros > div > img{
-        height: 30px;
-        width: 30px;
+@media only screen and (max-width: 1186px) {
+    .filtros{
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media only screen and (max-width: 616px) {
+    .filtros{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media only screen and (max-width: 588px) {
-    .filtros > div > img{
+    .filtros > button > img{
         height: 23px;
         width: 23px;
     }

@@ -36,14 +36,14 @@ function Filtro({setCategoria}){
         <div className='filtros'>
             {
                 Imgs.map( imagem => (
-                    <div 
+                    <button 
                         key={imagem.id} 
                         className={ativo === imagem.id ? 'ativo' : ''}
                         onClick={() => CategoriaClick(imagem.id)}
                     > 
                         <img src={imagem.src} alt={imagem.nome}></img>
                         <span>{imagem.nome}</span>
-                    </div>
+                    </button>
                 ))
             }
         </div>
