@@ -1,5 +1,5 @@
 import './estilo.css';
-import {Imgs} from './imagens.js';
+import {Imgs} from './imagens.jsx';
 
 import Pin from '../../icones/pin.svg';
 import Descricao from '../../icones/descricao.svg';
